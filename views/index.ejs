@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Bolsa Laboral</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
@@ -238,103 +238,29 @@
       </button>
     </div>
     <h1 class="bg-indigo-600 text-white text-center py-4 text-xl my-4">Bolsa de trabajo</h1>
+    <!-- This is an example component -->
+    <div class="p-2 mx-auto text-gray-600 flex justify-center">
+      <form action="search" method="POST">
+      <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 w-96 rounded-lg text-sm focus:outline-none mr-1"
+        type="search" name="search" placeholder="Search">
+      <input type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300">
+      </form>  
+    </div>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
+      <% for(var i = 0; i< data.length; i++) { %>
       <div class="w-full rounded-xl shadow-lg pb-2">
         <div>
           <img class="rounded-t-xl" src="images/foto.jpg" alt="">
         </div>
         <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
+          <h3 class="text-center bg-indigo-600 text-white text-lg fon"><%= data[i].nombre %></h3>
+          <p class="m-4 text-center"><%= data[i].datos %></p>
         </div>
         <div class="m-4 text-right">
           <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
         </div>
       </div>
-      <div class="w-full rounded-xl shadow-lg pb-2">
-        <div>
-          <img class="rounded-t-xl" src="images/foto.jpg" alt="">
-        </div>
-        <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
-        </div>
-        <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
-      </div>
-      <div class="w-full rounded-xl shadow-lg pb-2">
-        <div>
-          <img class="rounded-t-xl" src="images/foto.jpg" alt="">
-        </div>
-        <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
-        </div>
-        <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
-      </div>
-      <div class="w-full rounded-xl shadow-lg pb-2">
-        <div>
-          <img class="rounded-t-xl" src="images/foto.jpg" alt="">
-        </div>
-        <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
-        </div>
-        <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
-      </div>
-      <div class="w-full rounded-xl shadow-lg pb-2">
-        <div>
-          <img class="rounded-t-xl" src="images/foto.jpg" alt="">
-        </div>
-        <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
-        </div>
-        <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
-      </div>
-      <div class="w-full rounded-xl shadow-lg pb-2">
-        <div>
-          <img class="rounded-t-xl" src="images/foto.jpg" alt="">
-        </div>
-        <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
-        </div>
-        <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
-      </div>
-      <div class="w-full rounded-xl shadow-lg pb-2">
-        <div>
-          <img class="rounded-t-xl" src="images/foto.jpg" alt="">
-        </div>
-        <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
-        </div>
-        <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
-      </div>
-      <div class="w-full rounded-xl shadow-lg pb-2">
-        <div>
-          <img class="rounded-t-xl" src="images/foto.jpg" alt="">
-        </div>
-        <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon">Juan Perez</h3>
-          <p class="m-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor labore veniam ea ducimus dolores harum velit quia animi laborum ullam rerum earum quaerat delectus suscipit recusandae soluta itaque, ab repudiandae!</p>
-        </div>
-        <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
-      </div>
+      <% } %>
     </div>
     
 <!-- Main modal -->
@@ -388,7 +314,19 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
+<footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
+  <!-- Grid container -->
+  <div class="container p-4"></div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
