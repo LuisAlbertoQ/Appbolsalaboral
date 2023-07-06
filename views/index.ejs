@@ -149,13 +149,11 @@
           <h3 class="text-center bg-blue-700 text-white text-lg fon"><%= data[i].egs_nombres %></h3>
           <p class="m-4 text-center"><%= data[i].datos %></p>
         </div>
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button data-modal-target="authentication-egresado" data-modal-toggle="authentication-egresado"  type="button" class="rounded-full bg-blue-900 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-              <span class="sr-only">View notifications</span>
-              <i class="fa-solid fa-user-tie text-xl"></i>
-            </button>
-       
-        </div>
+        <div class="m-4 text-right">
+          <button data-modal-target="authentication-egresado" data-modal-toggle="authentication-egresado"  type="button" class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href=""><a>Ver perfil</a>
+          </button>
+     
+      </div>
       </div>
       <% } %>
     </div>
