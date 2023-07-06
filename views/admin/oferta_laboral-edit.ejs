@@ -198,7 +198,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="categorias" class="nav-link">
+              <a href="oferta_laboal" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Categorias
@@ -244,21 +244,21 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="../categorias-edit/<%=id%>" method="POST">
+              <form action="../oferta_laboral-edit/<%=id%>" method="POST">
                 <div class="card-body">
                   <div class="form-group">
-                    <label>Nombre categoría</label>
-                    <input name="nombre" value="<%=nombre%>" type="text" class="form-control" placeholder="Ingrese nombre">
+                    <label>Descripción</label>
+                    <textarea name="descripcion" cols="30" rows="5" class="form-control" placeholder="Ingrese descripción"><%=descripcion%></textarea>
                   </div>
                   <div class="form-group">
-                    <label>Descripción</label>                    
-                    <textarea name="descripcion" cols="30" rows="5" class="form-control" placeholder="Ingrese descripción"><%=descripcion%></textarea>
+                    <label>empresa</label>                    
+                    <input name="empresa" value="<%=empresa%>" type="text" class="form-control" placeholder="Ingrese empresa">
                   </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Actualizar</button>
-                  <a href="../categorias" class="btn btn-secondary">Cancelar</a>
+                  <a href="../oferta_laboral" class="btn btn-secondary">Cancelar</a>
                 </div>
               </form>
             </div>

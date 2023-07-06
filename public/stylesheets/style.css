@@ -658,9 +658,6 @@ video {
 .mr-3 {
   margin-right: 0.75rem;
 }
-.mr-auto {
-  margin-right: auto;
-}
 .ms-auto {
   -webkit-margin-start: auto;
           margin-inline-start: auto;

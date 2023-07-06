@@ -22,7 +22,7 @@
           <div class="alert alert-danger" role="alert"><%- messages.error %></div>
         <% } %>      
         <div class="text-right">
-          <a href="categorias-add" class="btn btn-primary"><i class="fas fa-plus"></i> Agregar</a>
+          <a href="oferta_laboral-add" class="btn btn-primary"><i class="fas fa-plus"></i> Agregar</a>
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -34,7 +34,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Lista de categorias</h3>
+                <h3 class="card-title">Lista de ofertas_laborales</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body p-0">
@@ -42,8 +42,8 @@
                   <thead>
                     <tr>
                       <th style="width: 10px">#</th>
-                      <th>Nombre</th>
                       <th>Descripción</th>
+                      <th>Empresa</th>
                       <th class="text-right">Opciones</th>
                     </tr>
                   </thead>
@@ -51,11 +51,11 @@
                     <% for(var i = 0; i< data.length; i++) { %>
                     <tr>
                       <td><%= (i+1) %></td>
-                      <td><%= data[i].nombre %></td>
                       <td><%= data[i].descripcion %></td>
+                      <td><%= data[i].empresa %></td>
                       <td class="text-right">
-                        <a href="categorias-edit/<%=data[i].id%>" class="btn btn-secondary"><i class="fas fa-edit"></i></a>
-                        <a href="categorias-del/<%=data[i].id%>" onclick="return alert('Estas seguro que deseas eliminar?')" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                        <a href="oferta_laboral-edit/<%=data[i].id%>" class="btn btn-secondary"><i class="fas fa-edit"></i></a>
+                        <a href="oferta_laboral-del/<%=data[i].id%>" onclick="return alert('Estas seguro que deseas eliminar?')" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                       </td>
                     </tr>
                     <% } %>
