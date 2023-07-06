@@ -37,8 +37,8 @@
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div class="flex flex-shrink-0 items-center">
-              <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-              <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+              
+              <img class="hidden h-8 w-auto lg:block" src="images/logo1.png" alt="Your Company">
             </div>
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
@@ -130,13 +130,13 @@
       </div>
 
     </div>
-    <h1 class="bg-indigo-600 text-white text-center py-4 text-xl my-4">Bolsa de trabajo</h1>
+    <h1 class="bg-blue-700 text-white text-center py-4 text-xl my-4">Bolsa de trabajo</h1>
     <!-- This is an example component -->
     <div class="p-2 mx-auto text-gray-600 flex justify-center">
       <form action="search" method="POST">
       <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 w-96 rounded-lg text-sm focus:outline-none mr-1"
         type="search" name="search" placeholder="Search">
-      <input type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300">
+      <input type="submit" class="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-indigo-300">
       </form>  
     </div>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
@@ -146,11 +146,11 @@
           <img class="rounded-t-xl" src="images/foto.jpg" alt="">
         </div>
         <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon"><%= data[i].egs_nombres %></h3>
+          <h3 class="text-center bg-blue-700 text-white text-lg fon"><%= data[i].egs_nombres %></h3>
           <p class="m-4 text-center"><%= data[i].datos %></p>
         </div>
         <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
+          <a class="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
         </div>
       </div>
       <% } %>
