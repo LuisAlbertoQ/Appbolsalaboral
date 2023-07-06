@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
   </head>
   <body>
-    <nav x-data="{open:false}" class="bg-gray-800">
+    <nav x-data="{open:false}" class="bg-blue-700">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -37,13 +37,13 @@
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div class="flex flex-shrink-0 items-center">
-              <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
-              <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+              
+              <img class="hidden h-8 w-auto lg:block" src="images/logo1.png" alt="Your Company">
             </div>
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+                <a href="#" class="bg-blue-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
                 <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
                 <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
                 <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
@@ -51,7 +51,7 @@
             </div>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"  type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"  type="button" class="rounded-full bg-blue-900 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
               <span class="sr-only">View notifications</span>
               <i class="fa-solid fa-user-tie text-xl"></i>
             </button>
@@ -104,30 +104,7 @@
     data-te-carousel-init
     data-te-carousel-slide>
     <!--Carousel indicators-->
-    <div
-        class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-        data-te-carousel-indicators>
-        <button
-          type="button"
-          data-te-target="#carouselExampleCaptions"
-          data-te-slide-to="0"
-          data-te-carousel-active
-          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          aria-current="true"
-          aria-label="Slide 1"></button>
-        <button
-          type="button"
-          data-te-target="#carouselExampleCaptions"
-          data-te-slide-to="1"
-          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          aria-label="Slide 2"></button>
-        <button
-          type="button"
-          data-te-target="#carouselExampleCaptions"
-          data-te-slide-to="2"
-          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-          aria-label="Slide 3"></button>
-      </div>
+ 
 
       <!--Carousel items-->
       <div
@@ -139,111 +116,27 @@
           data-te-carousel-item
           style="backface-visibility: hidden">
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
+            src="images/laboral.png"
             class="block w-full"
             alt="..." />
           <div
             class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 class="text-xl">First slide label</h5>
-            <p>
-              Some representative placeholder content for the first slide.
-            </p>
-          </div>
-        </div>
-        <!--Second item-->
-        <div
-          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item
-          style="backface-visibility: hidden">
-          <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-            class="block w-full"
-            alt="..." />
-          <div
-            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 class="text-xl">Second slide label</h5>
-            <p>
-              Some representative placeholder content for the second slide.
-            </p>
-          </div>
-        </div>
-        <!--Third item-->
-        <div
-          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item
-          style="backface-visibility: hidden">
-          <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-            class="block w-full"
-            alt="..." />
-          <div
-            class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 class="text-xl">Third slide label</h5>
-            <p>
-              Some representative placeholder content for the third slide.
-            </p>
+           
+        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Bolsa Laboral</span></h1>
+        
+
           </div>
         </div>
       </div>
 
-      <!--Carousel controls - prev item-->
-      <button
-        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide="prev">
-        <span class="inline-block h-8 w-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 19.5L8.25 12l7.5-7.5" />
-          </svg>
-        </span>
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Previous</span
-        >
-      </button>
-      <!--Carousel controls - next item-->
-      <button
-        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-        type="button"
-        data-te-target="#carouselExampleCaptions"
-        data-te-slide="next">
-        <span class="inline-block h-8 w-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </span>
-        <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Next</span
-        >
-      </button>
     </div>
-    <h1 class="bg-indigo-600 text-white text-center py-4 text-xl my-4">Bolsa de trabajo</h1>
+    <h1 class="bg-blue-700 text-white text-center py-4 text-xl my-4">Bolsa de trabajo</h1>
     <!-- This is an example component -->
     <div class="p-2 mx-auto text-gray-600 flex justify-center">
       <form action="search" method="POST">
       <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 w-96 rounded-lg text-sm focus:outline-none mr-1"
         type="search" name="search" placeholder="Search">
-      <input type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300">
+      <input type="submit" class="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-indigo-300">
       </form>  
     </div>
     <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
@@ -253,67 +146,125 @@
           <img class="rounded-t-xl" src="images/foto.jpg" alt="">
         </div>
         <div>
-          <h3 class="text-center bg-indigo-600 text-white text-lg fon"><%= data[i].nombre %></h3>
+          <h3 class="text-center bg-indigo-600 text-white text-lg fon"><%= data[i].egs_nombres %></h3>
           <p class="m-4 text-center"><%= data[i].datos %></p>
         </div>
         <div class="m-4 text-right">
-          <a class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href="">Ver perfil</a>
-        </div>
+          <button data-modal-target="authentication-egresado" data-modal-toggle="authentication-egresado"  type="button" class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-300" href=""><a>Ver perfil</a>
+          </button>
+     
+      </div>
       </div>
       <% } %>
     </div>
     
 <!-- Main modal -->
-<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative w-full max-w-md max-h-full">
+<div id="authentication-egresado" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative w-full max-w-md max-h-full">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-modal">
                 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 <span class="sr-only">Close modal</span>
             </button>
+            <% for(var i = 0; i< data.length; i++) { %></data.length>
             <div class="px-6 py-6 lg:px-8">
-                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Crea cuenta de egresado</h3>
+              
+                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Perfil de Egresado</h3>
                 <form class="space-y-6" action="#">
-                    <div>
-                      <label for="nombres" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombres</label>
-                      <input type="text" name="nombres" id="nombres" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Juan Carlos" required>
-                    </div>
-                    <div>
-                      <label for="apellidos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Apellidos</label>
-                      <input type="text" name="apellidos" id="apellidos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Perez Perez" required>
-                    </div>
-                    <div>
-                      <label for="dni" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DNI</label>
-                      <input type="text" name="dni" id="dni" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="05689457" required>
-                    </div>
-                    <div>
-                      <label for="fecha" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fecha de nacimiento</label>
-                      <input type="date" name="fecha" id="fecha" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
-                    </div>
-                    <div>
-                      <label for="genero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Genero</label>
-                      <select name="genero" id="genero" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
-                        <option>Seleccione opción</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Fenemino">Fenemino</option>
-                      </select>
-                    </div>
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo electrónico</label>
-                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
-                    </div>
-                    <div>
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                    
+                    <div> 
+                      <p class="text-gray-900 dark:text-white">Nombres</p>
+                      <h3 class="bg-gray-50 border border-gray-300 rounded-lg focus:border-blue-500 w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"><%= data[i].egs_nombres %> </h3>
                     </div>
                     
-                    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>
+                    <div>
+                      <p class="text-gray-900 dark:text-white">Apellidos Paterno</p>
+                      <h3 class="bg-gray-50 border border-gray-300 rounded-lg focus:border-blue-500 w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"><%= data[i].egs_ap_paterno %> </h3>
+                    </div>
+                    <div>
+                      <p class="text-gray-900 dark:text-white">DNI</p>
+                      <h3 class="bg-gray-50 border border-gray-300 rounded-lg focus:border-blue-500 w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"><%= data[i].egs_dni %> </h3>
+                    </div>
+                    <div>
+                      <p class="text-gray-900 dark:text-white">Fecha De Nacimiento</p>
+                      <h3 class="bg-gray-50 border border-gray-300 rounded-lg focus:border-blue-500 w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"><%= data[i].egs_fecha_nacimiento %> </h3>
+                    </div>
+                    <div>
+                      <p class="text-gray-900 dark:text-white">Nacionalidad</p>
+                      <h3 class="bg-gray-50 border border-gray-300 rounded-lg focus:border-blue-500 w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"><%= data[i].egs_nacionalidad %> </h3>
+                    </div>
+                    <div>
+                      <p class="text-gray-900 dark:text-white">Correo</p>
+                      <h3 class="bg-gray-50 border border-gray-300 rounded-lg focus:border-blue-500 w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"><%= data[i].egs_correo %> </h3>
+                    </div>
+                    <div>
+                      <p class="text-gray-900 dark:text-white">foto</p>
+                      <h3 class="bg-gray-50 border border-gray-300 rounded-lg focus:border-blue-500 w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"><%= data[i].egs_foto %> </h3>
+                    </div>
                     
+                    <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>  
                 </form>
+                
             </div>
-        </div>
+            <% } %>
+          </div>
+      </div>
+      
     </div>
+
+
+<!-- ver Egresado -->
+<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="egresado fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative w-full max-w-md max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="authentication-egresado">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              <span class="sr-only">Close modal</span>
+          </button>
+          <div class="px-6 py-6 lg:px-8">
+              <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Crea cuenta de egresado</h3>
+              <form class="space-y-6" action="#">
+                  <div>
+                    <label for="nombres" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombres</label>
+                    <input type="text" name="nombres" id="nombres" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Juan Carlos" required>
+                  </div>
+                  <div>
+                    <label for="apellidos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Perez Perez" required>
+                  </div>
+                  <div>
+                    <label for="dni" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DNI</label>
+                    <input type="text" name="dni" id="dni" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="05689457" required>
+                  </div>
+                  <div>
+                    <label for="fecha" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" id="fecha" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                  </div>
+                  <div>
+                    <label for="genero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Genero</label>
+                    <select name="genero" id="genero" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+                      <option>Seleccione opción</option>
+                      <option value="Masculino">Masculino</option>
+                      <option value="Fenemino">Fenemino</option>
+                    </select>
+                  </div>
+                  <div>
+                      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Correo electrónico</label>
+                      <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                  </div>
+                  <div>
+                      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
+                      <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                  </div>
+                  
+                  <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>
+                  
+              </form>
+          </div>
+      </div>
+  </div>
 </div>
 <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
   <!-- Grid container -->
